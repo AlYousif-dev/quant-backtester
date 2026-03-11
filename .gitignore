@@ -12,6 +12,7 @@ __pycache__/
 # Environment variables
 .env
 .venv/
+__pycache__
 
 # Java build files
 *.class
