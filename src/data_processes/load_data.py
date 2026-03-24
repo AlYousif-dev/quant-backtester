@@ -1,7 +1,7 @@
 import pandas as pd
 
-def load_data(symbol):
-    file_path = f"data/{symbol}_5y_data.csv"
+def load_data(symbol,start,end):
+    file_path = f"data/{symbol}_{start[:4]}_{end[:4]}_data.csv"
     data = pd.read_csv(file_path)
     
     # 1. Drop the first two rows (the extra headers)

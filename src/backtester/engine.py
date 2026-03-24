@@ -59,5 +59,5 @@ def run_backtest(data, signals, cash):
     elif position == -1:
         cash = shares * (entry_price - final_price + entry_price)
         trades += 1
-
-    return cash - initial
+    profit = cash - initial
+    return profit
