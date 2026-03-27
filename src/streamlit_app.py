@@ -1,8 +1,6 @@
 import streamlit as st
 import os
 import pandas as pd
-
-# Your exact imports from the CLI
 from data_processes.download_data import download_data
 from data_processes.load_data import load_data
 from strategies.sma_crossover import sma_crossover
