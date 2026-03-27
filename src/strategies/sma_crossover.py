@@ -11,7 +11,6 @@ def sma_crossover(d, fast_period, slow_period):
     signals = [0]
     
     for i in range(1, len(d)):
-        regimen = regime_arr[i]
         if d[fast].iloc[i] is None or d[slow].iloc[i] is None:
             signals.append(0)
         if ((d[fast].iloc[i-1] <= d[slow].iloc[i-1] and d[fast].iloc[i] > d[slow].iloc[i])):
